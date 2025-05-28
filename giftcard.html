@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Gift Card</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="index.html" >
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            padding: 30px;
+        }
+        
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .gift-card {
+            background: linear-gradient(135deg, #6e8efb, #a777e3);
+            border-radius: 8px;
+            padding: 30px;
+            color: white;
+            text-align: center;
+            margin-bottom: 30px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .gift-card::before {
+            content: "";
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0) 60%);
+            transform: rotate(30deg);
+        }
+        
+        .card-value {
+            font-size: 48px;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+        
+        .card-code {
+            background: rgba(0,0,0,0.2);
+            padding: 15px;
+            border-radius: 5px;
+            font-family: monospace;
+            font-size: 18px;
+            letter-spacing: 2px;
+            margin: 20px auto;
+            display: inline-block;
+        }
+        
+        .card-details {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+            font-size: 14px;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+        
+        input, select, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        
+        button {
+            background-color: #27ae60;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        
+        button:hover {
+            background-color: #2ecc71;
+        }
+        
+        .instructions {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 5px;
+            margin-top: 30px;
+        }
+        
+        .terms {
+            font-size: 12px;
+            color: #7f8c8d;
+            margin-top: 30px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light px-4">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="MnS home.html">
+                <img src="https://i.pinimg.com/736x/c4/30/40/c4304052c89eac5e84a2a2d7175bb3d1.jpg" alt="Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="Necklaces.html">Necklaces</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Bracelets.html">Bracelets</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Earrings.html">Earrings</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link cart-nav-link" href="#" id="cartIcon">
+                            <i class="fas fa-shopping-bag"></i>
+                            <span class="cart-count" id="cartCount">0</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <h1>Digital Gift Card</h1>
+        
+        <div class="gift-card">
+            <h2>Your Gift Card</h2>
+            <div class="card-value">$50.00</div>
+            <div class="card-code">G1FT-C4RD-2023-XYZ</div>
+            <div class="card-details">
+                <div>Expires: 12/31/2024</div>
+                <div>Balance: $50.00</div>
+            </div>
+        </div>
+        
+        <h2>Send a Gift Card</h2>
+        
+        <div class="form-group">
+            <label for="amount">Amount</label>
+            <select id="amount">
+                <option value="25">$25</option>
+                <option value="50" selected>$50</option>
+                <option value="100">$100</option>
+                <option value="200">$200</option>
+                <option value="custom">Custom Amount</option>
+            </select>
+        </div>
+        
+        <div class="form-group">
+            <label for="recipient-name">Recipient Name</label>
+            <input type="text" id="recipient-name" placeholder="Enter recipient's name">
+        </div>
+        
+        <div class="form-group">
+            <label for="recipient-email">Recipient Email</label>
+            <input type="email" id="recipient-email" placeholder="Enter recipient's email">
+        </div>
+        
+        <div class="form-group">
+            <label for="message">Personal Message (Optional)</label>
+            <textarea id="message" rows="4" placeholder="Add a personal message"></textarea>
+        </div>
+        
+        <button id="purchase-button">Purchase Gift Card</button>
+        
+        <div class="instructions">
+            <h3>How to Use Your Gift Card</h3>
+            <ol>
+                <li>Copy the gift card code above</li>
+                <li>At checkout, paste the code in the "Gift Card" field</li>
+                <li>The gift card balance will be applied to your order</li>
+                <li>Any remaining balance will stay on the card for future use</li>
+            </ol>
+        </div>
+        
+        <div class="terms">
+            <p>Gift cards never expire. No fees. Not redeemable for cash unless required by law.</p>
+            <p>For balance inquiries or questions, please contact customer service.</p>
+        </div>
+    </div>
+    
+    <script>
+        // Simple JavaScript for demonstration
+        document.getElementById('purchase-button').addEventListener('click', function() {
+            const amount = document.getElementById('amount').value;
+            const name = document.getElementById('recipient-name').value;
+            const email = document.getElementById('recipient-email').value;
+            
+            if (!name || !email) {
+                alert('Please fill in all required fields');
+                return;
+            }
+            
+            alert(`Gift card purchase confirmed!\n$${amount} gift card will be sent to ${email}`);
+        });
+    </script>
+  <script>
+    // Toggle cart overlay
+    const cartIcon = document.getElementById('cartIcon');
+    const cartOverlay = document.getElementById('cartOverlay');
+    const overlayBg = document.getElementById('overlayBg');
+    
+    cartIcon.addEventListener('click', function(e) {
+        e.preventDefault();
+        cartOverlay.classList.toggle('show');
+        overlayBg.classList.toggle('show');
+    });
+    
+    overlayBg.addEventListener('click', function() {
+        cartOverlay.classList.remove('show');
+        overlayBg.classList.remove('show');
+    });
+    
+    // Close cart when clicking outside
+    document.addEventListener('click', function(event) {
+        if (!cartOverlay.contains(event.target) && 
+            event.target !== cartIcon && 
+            !cartIcon.contains(event.target)) {
+            cartOverlay.classList.remove('show');
+            overlayBg.classList.remove('show');
+        }
+    });
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+ 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jewelry Store</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="MnStyle.css" >
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light px-4">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="https://i.pinimg.com/736x/c4/30/40/c4304052c89eac5e84a2a2d7175bb3d1.jpg" alt="Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="Necklaces.html">Necklaces</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Bracelets.html">Bracelets</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Earrings.html">Earrings</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link cart-nav-link" href="#" id="cartIcon">
+                            <i class="fas fa-shopping-bag"></i>
+                            <span class="cart-count" id="cartCount">0</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Overlay Background -->
+    <div class="overlay-bg" id="overlayBg"></div>
+    
+    <!-- Floating Cart Overlay -->
+    <div class="cart-overlay" id="cartOverlay">
+        <div class="bag-header">SHOPPING BAG (<span id="cartItemCount">0</span>)</div>
+        
+        <!-- Empty Cart State -->
+        <div class="empty-bag">
+            <h4>YOUR BAG IS EMPTY.</h4>
+            <p>LET'S FIX THAT.</p>
+            
+            <div class="shop-categories">
+                <a href="Earrings.html" class="shop-btn">SHOP EARRINGS</a>
+                <a href="Necklaces.html" class="shop-btn">SHOP NECKLACES</a>
+                <a href="bracelets.html" class="shop-btn">SHOP BRACELETS</a>
+            </div>
+        </div>
+        
+        <div class="subtotal">
+            <span>Sub-Total</span>
+            <span>P 0.00</span>
+        </div>
+        
+        <button class="checkout-btn">EXPRESS CHECK OUT — P 0.00</button>
+    </div>
+
+
+ <h1>Gold  </h1> 
+ <section class="container text-center py-5 best-sellers">
+    <div class="row">
+      <!-- Product 1 -->
+      <div class="col-md-4 mb-4">
+        <div class="product-image-container">
+          <img src="https://i.pinimg.com/736x/cd/df/ae/cddfae2db4c6fc27b06fe9367f244fa2.jpg" alt="Bracelets" 
+               alt="Bracelets" 
+               class="img-fluid product-image">
+        </div>
+        <h5 class="mt-2">Gold Set Crosses</h5>
+        <p class="price">P170</p>
+            <button class="btn btn-dark add-to-cart">Add to Cart</button>
+      </div>
+      
+      <!-- Product 2 -->
+      <div class="col-md-4 mb-4">
+        <div class="product-image-container">
+          <img src="https://i.pinimg.com/736x/c2/2e/cf/c22ecf5446a1704c3d653f09abbb1a50.jpg" 
+               alt="Necklaces" 
+               class="img-fluid product-image">
+        </div>
+        <h5 class="mt-2">Pearl beaded set</h5>
+        <p class="price">P125</p>
+            <button class="btn btn-dark add-to-cart">Add to Cart</button>
+      </div>
+      
+      <!-- Product 3 -->
+      <div class="col-md-4 mb-4">
+        <div class="product-image-container">
+          <img src="https://i.pinimg.com/736x/98/64/0d/98640d560ebf25500ae32421f14697fa.jpg" 
+               alt="Earrings" 
+               class="img-fluid product-image">
+        </div>
+        <h5 class="mt-2">butterfly charm</h5>
+        <p class="price">P80</p>
+            <button class="btn btn-dark add-to-cart">Add to Cart</button>
+          
+
+      </div>
+    </div> 
+  </section> 
+  <h1>Silver </h1>
+  <section class="container text-center py-5 best-sellers">
+    <div class="row">
+      <!-- Product 1 -->
+      <div class="col-md-4 mb-4">
+        <div class="product-image-container">
+          <img src="https://i.pinimg.com/736x/fe/4b/64/fe4b64d7d67a516423582b95f7fb9364.jpg" alt="Bracelets" 
+               alt="Bracelets" 
+               class="img-fluid product-image">
+        </div>
+        <h5 class="mt-2">Westwood Pearls</h5>
+        <p class="price">P170</p>
+            <button class="btn btn-dark add-to-cart">Add to Cart</button>
+      </div>
+      
+      <!-- Product 2 -->
+      <div class="col-md-4 mb-4">
+        <div class="product-image-container">
+          <img src="https://i.pinimg.com/736x/9b/db/97/9bdb97037f6199445ddaef7f95558982.jpg" 
+               alt="Necklaces" 
+               class="img-fluid product-image">
+        </div>
+        <h5 class="mt-2">Flower Motief </h5>
+        <p class="price">P85</p>
+            <button class="btn btn-dark add-to-cart">Add to Cart</button>
+      </div>
+      
+      <!-- Product 3 -->
+      <div class="col-md-4 mb-4">
+        <div class="product-image-container">
+          <img src="https://i.pinimg.com/736x/63/71/2e/63712ecbfdb10c890e54107797fa5fb4.jpg" 
+               alt="Earrings" 
+               class="img-fluid product-image">
+        </div>
+        <h5 class="mt-2">Cellestial Set </h5>
+        <p class="price">P165</p>
+            <button class="btn btn-dark add-to-cart">Add to Cart</button>
+      </div>
+    </div> 
+  </section> 
+  
+  
+<!-- Footer -->
+<footer class="bg-dark text-white pt-5 pb-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <h5>Get social with us</h5>
+          <div class="social-icons mt-3">
+            <a href="https://www.instagram.com/mns_jewelry_collection?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="text-white me-3"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.tiktok.com/@mnsjewelry_collection?_t=ZM-8wiNZLmcIU9&_r=1" class="text-white me-3"><i class="bi bi-tiktok"></i></a>
+          </div>
+        </div>
+        
+        
+        <div class="col-md-2 mb-4">
+          <h5>NEED HELP</h5>
+          <ul class="list-unstyled">
+            <li><a href="mailto:example@example.com" class="text-white-50">Contact Us: Email</a></li>
+            <li><a href="tel:+15551234567" style="color: gray; text-decoration: none;">
+              📞 (555) 123-4567</a></li>
+          </ul>
+        </div>
+        
+        <div class="col-md-2 mb-4">
+          <h5>Join our world</h5>
+          <br> <p> For access to discounts, promotions and more click button below</p>
+          <div class="text-center mt-4">
+            <a href="form.html" class="btn btn-dark px-5 py-2">JOIN OUR COMMUNITY</a>
+          </div>
+        </div>
+        
+        <div class="col-md-2 mb-4">
+          <h5>More Info</h5>
+          <ul class="list-unstyled">
+            <li><a href="giftcard.html" class="text-white-50">Digital Gift Card</a></li>
+            <li><a href="aboutus.html" class="text-white-50">About Us</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="border-top border-secondary pt-3 mt-3">
+        <div class="row">
+          <div class="col-md-6">
+            <ul class="list-inline mb-0">
+              <li class="list-inline-item"><a href="#" class="text-white-50">Terms & Conditions</a></li>
+              <li class="list-inline-item"><a href="#" class="text-white-50">Security & Privacy</a></li>
+            </ul>
+          </div>
+          <div class="col-md-6 text-md-end">
+            <p class="mb-0 text-white-50">© 2025 Loving</p>
+            <p class="mb-0 text-white-50">South Africa</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+<script>
+    // Toggle cart overlay
+    const cartIcon = document.getElementById('cartIcon');
+    const cartOverlay = document.getElementById('cartOverlay');
+    const overlayBg = document.getElementById('overlayBg');
+    
+    cartIcon.addEventListener('click', function(e) {
+        e.preventDefault();
+        cartOverlay.classList.toggle('show');
+        overlayBg.classList.toggle('show');
+    });
+    
+    overlayBg.addEventListener('click', function() {
+        cartOverlay.classList.remove('show');
+        overlayBg.classList.remove('show');
+    });
+    
+    // Close cart when clicking outside
+    document.addEventListener('click', function(event) {
+        if (!cartOverlay.contains(event.target) && 
+            event.target !== cartIcon && 
+            !cartIcon.contains(event.target)) {
+            cartOverlay.classList.remove('show');
+            overlayBg.classList.remove('show');
+        }
+    });
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+ 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

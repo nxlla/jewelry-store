@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jewelry Store</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="MnStyle.css" >
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light px-4">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#home">
+                <img src="https://i.pinimg.com/736x/c4/30/40/c4304052c89eac5e84a2a2d7175bb3d1.jpg" alt="Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="Necklaces.html">Necklaces</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Bracelets.html">Bracelets</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Earrings.html">Earrings</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link cart-nav-link" href="#" id="cartIcon">
+                            <i class="fas fa-shopping-bag"></i>
+                            <span class="cart-count" id="cartCount">0</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Overlay Background -->
+    <div class="overlay-bg" id="overlayBg"></div>
+    
+    <!-- Floating Cart Overlay -->
+    <div class="cart-overlay" id="cartOverlay">
+        <div class="bag-header">SHOPPING BAG (<span id="cartItemCount">0</span>)</div>
+        
+        <!-- Empty Cart State -->
+        <div class="empty-bag">
+            <h4>YOUR BAG IS EMPTY.</h4>
+            <p>LET'S FIX THAT.</p>
+            
+            <div class="shop-categories">
+                <a href="Earrings.html" class="shop-btn">SHOP EARRINGS</a>
+                <a href="Necklaces.html" class="shop-btn">SHOP NECKLACES</a>
+                <a href="bracelets.html" class="shop-btn">SHOP RINGS</a>
+            </div>
+        </div>
+        
+        <div class="subtotal">
+            <span>Sub-Total</span>
+            <span>P 0.00</span>
+        </div>
+        
+        <button class="checkout-btn">EXPRESS CHECK OUT — P 0.00</button>
+    </div>
+
+  
+  <!-- Banner -->
+  <div class="banner" id="home">
+    <div class="banner-overlay">
+        <div class="banner-text">
+          <p class="banner-subtitle">Locally Sourced</p>
+          <h1 class="banner-title">MnS Jewelry<br>Welcome</h1>
+          <div class="banner-text">
+            <a href="Necklaces.html" class="shop-btn">Shop Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+  <!-- Best Sellers Section -->
+  <section class="container text-center py-5 best-sellers">
+    <h2 class="mb-4">Best Sellers</h2>
+    <div class="row">
+      <!-- Product 1 -->
+      <div class="col-md-4 mb-4">
+        <div class="product-image-container">
+          <img src="https://i.pinimg.com/736x/fc/9d/18/fc9d18af4f53488a2560d9ca7d9461b8.jpg" 
+               alt="Bracelets" 
+               class="img-fluid product-image">
+        </div>
+        <h5 class="mt-2">Chunky Gold Set</h5>
+            <p class="price">P180</p>
+            <button class="btn btn-dark add-to-cart">Add to Cart</button>
+      </div>
+      
+      <!-- Product 2 -->
+      <div class="col-md-4 mb-4">
+        <div class="product-image-container">
+          <img src="https://i.pinimg.com/736x/6e/88/ac/6e88ac1d10103d6d7e894668f4daebc3.jpg" 
+               alt="Necklaces" 
+               class="img-fluid product-image">
+        </div>
+        <h5 class="mt-2">Moon Necklace </h5>
+        <p class="price">P200</p>
+            <button class="btn btn-dark add-to-cart">Add to Cart</button>
+      </div>
+      
+      
+      <!-- Product 3 -->
+      <div class="col-md-4 mb-4">
+        <div class="product-image-container">
+          <img src="https://i.pinimg.com/736x/e5/50/4d/e5504da90e83d3f0316cd44d4457f02c.jpg" 
+               alt="Earrings" 
+               class="img-fluid product-image">
+        </div>
+        <h5 class="mt-2">Butterfly rhimestone P100</h5>
+        <p class="price">P100</p>
+            <button class="btn btn-dark add-to-cart">Add to Cart</button>
+      </div>
+    </div> 
+  </section> 
+        <!-- Division -->
+      <section class="cosy-section">
+        <div class="metallic-accent gold-accent">✦</div>
+        <div class="metallic-accent silver-accent">✦</div>
+        
+        <div class="container">
+            <div class="cosy-content">
+                <h2 class="cosy-title">Cosy Chic</h2>
+                <p class="cosy-description">
+                    Cold days call for cosy layers of glowing gold, shining silver, and statement jewels.
+                </p>
+                <a href="CosyChic.html" class="shop-btn">Shop Now</a>
+            </div>
+        </div>
+    </section>
+      <!--New In Section-->
+        <section class="container text-center py-5 best-sellers">
+          <h2 class="mb-4">New In</h2>
+          <div class="row">
+            <!-- Product 1 -->
+            <div class="col-md-4 mb-4">
+              <div class="product-image-container">
+                <img src="https://i.pinimg.com/736x/fc/3d/46/fc3d466f913ead2682831a778127a599.jpg" alt="Bracelets" 
+                     alt="Bracelets" 
+                     class="img-fluid product-image">
+              </div>
+              <h5 class="mt-2"> Gold Set</h5>
+              <p class="price">P300</p>
+            <button class="btn btn-dark add-to-cart">Add to Cart</button>
+            </div>
+            
+            <!-- Product 2 -->
+            <div class="col-md-4 mb-4">
+              <div class="product-image-container">
+                <img src="https://i.pinimg.com/736x/6a/b6/9b/6ab69b749b6f5c06fd5e3c1d11cb93a2.jpg" 
+                     alt="Necklaces" 
+                     class="img-fluid product-image">
+              </div>
+              <h5 class="mt-2">Moon Necklace P120</h5>
+              <p class="price">P129</p>
+            <button class="btn btn-dark add-to-cart">Add to Cart</button>
+            </div>
+            
+            <!-- Product 3 -->
+            <div class="col-md-4 mb-4">
+              <div class="product-image-container">
+                <img src="https://i.pinimg.com/736x/47/4f/af/474faf7a33e08db88c601f938197039f.jpg" 
+                     alt="Earrings" 
+                     class="img-fluid product-image">
+              </div>
+              <h5 class="mt-2">Pearl Flowers P90</h5>
+              <p class="price">P90</p>
+            <button class="btn btn-dark add-to-cart">Add to Cart</button>
+            </div>
+          </div> 
+        </section> 
+  <!-- Footer -->
+  <footer class="footer">
+
+<!-- Footer -->
+<footer class="bg-dark text-white pt-5 pb-3">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <h5>Get social with us</h5>
+        <div class="social-icons mt-3">
+          <a href="https://www.instagram.com/mns_jewelry_collection?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="text-white me-3"><i class="bi bi-instagram"></i></a>
+          <a href="https://www.tiktok.com/@mnsjewelry_collection?_t=ZM-8wiNZLmcIU9&_r=1" class="text-white me-3"><i class="bi bi-tiktok"></i></a>
+        </div>
+      </div>
+      
+      
+      <div class="col-md-2 mb-4">
+        <h5>NEED HELP</h5>
+        <ul class="list-unstyled">
+          <li><a href="mailto:example@example.com" class="text-white-50">Contact Us: Email</a></li>
+          <li><a href="tel:+15551234567" style="color: gray; text-decoration: none;">
+            📞 (555) 123-4567</a></li>
+        </ul>
+      </div>
+      
+      <div class="col-md-2 mb-4">
+        <h5>Join our world</h5>
+        <br> <p> For access to discounts, promotions and more click button below</p>
+        <div class="text-center mt-4">
+          <a href="form.html" class="btn btn-dark px-5 py-2">JOIN OUR COMMUNITY</a>
+        </div>
+      </div>
+      
+      <div class="col-md-2 mb-4">
+        <h5>More Info</h5>
+        <ul class="list-unstyled">
+          <li><a href="giftcard.html" class="text-white-50">Digital Gift Card</a></li>
+          <li><a href="aboutus.html" class="text-white-50">About Us</a></li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="border-top border-secondary pt-3 mt-3">
+      <div class="row">
+        <div class="col-md-6">
+          <ul class="list-inline mb-0">
+            <li class="list-inline-item"><a href="#" class="text-white-50">Terms & Conditions</a></li>
+            <li class="list-inline-item"><a href="#" class="text-white-50">Security & Privacy</a></li>
+          </ul>
+        </div>
+        <div class="col-md-6 text-md-end">
+          <p class="mb-0 text-white-50">© 2025 Loving</p>
+          <p class="mb-0 text-white-50">South Africa</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<script>
+  // Toggle cart overlay
+  const cartIcon = document.getElementById('cartIcon');
+  const cartOverlay = document.getElementById('cartOverlay');
+  const overlayBg = document.getElementById('overlayBg');
+  
+  cartIcon.addEventListener('click', function(e) {
+      e.preventDefault();
+      cartOverlay.classList.toggle('show');
+      overlayBg.classList.toggle('show');
+  });
+  
+  overlayBg.addEventListener('click', function() {
+      cartOverlay.classList.remove('show');
+      overlayBg.classList.remove('show');
+  });
+  
+  // Close cart when clicking outside
+  document.addEventListener('click', function(event) {
+      if (!cartOverlay.contains(event.target) && 
+          event.target !== cartIcon && 
+          !cartIcon.contains(event.target)) {
+          cartOverlay.classList.remove('show');
+          overlayBg.classList.remove('show');
+      }
+  });
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
